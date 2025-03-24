@@ -50,6 +50,11 @@ class __TwigTemplate_7cb7d912d87fc72238eb6edde5958288 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "dashboard/index.html.twig"));
 
+        // line 7
+        $context["show_vr"] = false;
+        // line 8
+        $context["show_docs"] = false;
+        // line 3
         $this->parent = $this->loadTemplate("base.html.twig", "dashboard/index.html.twig", 3);
         yield from $this->parent->unwrap()->yield($context, array_merge($this->blocks, $blocks));
         
@@ -83,7 +88,7 @@ class __TwigTemplate_7cb7d912d87fc72238eb6edde5958288 extends Template
         yield from [];
     }
 
-    // line 7
+    // line 10
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -96,9 +101,11 @@ class __TwigTemplate_7cb7d912d87fc72238eb6edde5958288 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 8
-        yield "    <h1>Dashboard</h1>
-    <p>Welcome to the dashboard!</p>
+        // line 11
+        yield "    <div class=\"ml-96\">
+        <h1>Dashboard</h1>
+        <p>Welcome to the dashboard!</p>
+    </div>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -130,7 +137,7 @@ class __TwigTemplate_7cb7d912d87fc72238eb6edde5958288 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  100 => 8,  87 => 7,  64 => 5,  41 => 3,);
+        return array (  105 => 11,  92 => 10,  69 => 5,  58 => 3,  56 => 8,  54 => 7,  41 => 3,);
     }
 
     public function getSourceContext(): Source
@@ -141,9 +148,14 @@ class __TwigTemplate_7cb7d912d87fc72238eb6edde5958288 extends Template
 
 {% block title %}Dashboard{% endblock %}
 
+{% set show_vr = false %}
+{% set show_docs = false %}
+
 {% block body %}
-    <h1>Dashboard</h1>
-    <p>Welcome to the dashboard!</p>
-{% endblock %}", "dashboard/index.html.twig", "C:\\Users\\skonb\\Desktop\\symfony\\my_project_directory\\templates\\dashboard\\index.html.twig");
+    <div class=\"ml-96\">
+        <h1>Dashboard</h1>
+        <p>Welcome to the dashboard!</p>
+    </div>
+{% endblock %}", "dashboard/index.html.twig", "D:\\GitHub\\WebApp\\UrbanLink\\UrbanLink_Symfony_Fork\\templates\\dashboard\\index.html.twig");
     }
 }
